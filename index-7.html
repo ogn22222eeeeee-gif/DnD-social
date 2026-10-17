@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090710">
+  <meta name="description" content="DND Social — a creator-first home for videos, conversations, communities, and commerce.">
+  <title>DND Social — Your world. Your people.</title>
+  <link rel="icon" href="assets/dnd-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="DND Social home">
+        <img src="assets/dnd-mark.svg" alt="" class="brand-mark">
+        <span>DND<span class="brand-social"> SOCIAL</span></span>
+      </a>
+      <button class="profile-switch" id="profileSwitch" type="button">
+        <span class="avatar avatar-you">D</span><span class="profile-copy"><strong>Demo Creator</strong><small>@yourhandle</small></span><span class="dots">•••</span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span> Home</button>
+        <button class="nav-item" data-view="discover"><span class="nav-icon">⌕</span> Discover <span class="nav-new">NEW</span></button>
+        <button class="nav-item" data-view="shorts"><span class="nav-icon">▷</span> Short videos</button>
+        <button class="nav-item" data-view="communities"><span class="nav-icon">◎</span> Communities</button>
+        <button class="nav-item" data-view="messages"><span class="nav-icon">✉</span> Messages <span class="nav-count">3</span></button>
+        <button class="nav-item" data-view="live"><span class="nav-icon">◉</span> Go live <span class="live-dot"></span></button>
+        <button class="nav-item" data-view="market"><span class="nav-icon">◇</span> Marketplace</button>
+        <button class="nav-item" data-view="studio"><span class="nav-icon">▥</span> Creator studio</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-promo">
+          <span class="promo-icon">✦</span>
+          <strong>Your next big thing starts here.</strong>
+          <p>Build your audience, share your ideas, and grow at your pace.</p>
+          <button class="btn btn-small btn-outline" data-view="studio">Explore creator tools</button>
+        </div>
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span> Settings</button>
+        <div class="side-foot">Made for your next chapter <span>✦</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-brand" data-view="home"><img src="assets/dnd-mark.svg" alt=""> DND SOCIAL</button>
+        <div class="search-wrap"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search creators, videos, communities..." aria-label="Search"></div>
+        <div class="top-actions">
+          <button class="icon-btn" aria-label="Notifications" id="notifyBtn">♧<i></i></button>
+          <button class="icon-btn" aria-label="Messages" data-view="messages">✉</button>
+          <button class="btn btn-primary top-create" data-view="create">＋ Create</button>
+          <span class="avatar avatar-you top-avatar">D</span>
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="welcome-row">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR WORLD, WIDE OPEN</p><h1 id="pageTitle">Your people. Your pulse.</h1><p class="subheading" id="pageSubtitle">A little inspiration, a little conversation, a lot of possibility.</p></div>
+          <div class="date-pill"><span class="date-dot"></span> YOUR SPACE IS READY</div>
+        </div>
+
+        <div class="view active" id="view-home">
+          <section class="hero-card">
+            <div class="hero-content">
+              <div class="hero-label"><span class="spark">✦</span> THE NEXT SOCIAL ERA</div>
+              <h2>Be seen for<br><em>what makes you, you.</em></h2>
+              <p>Share your moments. Find your people. Turn your creativity into something bigger.</p>
+              <div class="hero-buttons"><button class="btn btn-primary" data-view="create">＋ Share something</button><button class="btn btn-glass" data-view="discover">Explore DND <span>↗</span></button></div>
+              <div class="hero-trust"><span class="trust-avatars"><b>A</b><b>M</b><b>J</b></span><span>A fresh space for your next chapter</span></div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+              <div class="hero-phone"><div class="phone-top"><span></span><span></span></div><div class="phone-image"><span class="play-bubble">▶</span><div class="phone-caption">CREATE<br><b>WITHOUT LIMITS.</b></div></div><div class="phone-bottom"><i></i><i></i><i></i><i></i></div></div>
+              <div class="float-card float-card-top"><span class="float-icon">✦</span><div><b>Made to discover</b><small>Your next favorite creator</small></div></div>
+              <div class="float-card float-card-bottom"><span class="pulse-icon">↗</span><div><b>Your ideas matter</b><small>Start sharing today</small></div></div>
+            </div>
+            <div class="hero-glow"></div>
+          </section>
+
+          <section class="stories-section">
+            <div class="section-heading"><div><h3>Circles of now</h3><p>Quick moments from around your world.</p></div><button class="text-btn" data-view="discover">See all <span>↗</span></button></div>
+            <div class="stories-row">
+              <button class="story add-story" id="addStory"><span class="story-ring add-ring">＋</span><span>Your story</span></button>
+              <button class="story"><span class="story-ring ring-purple"><b>AM</b></span><span>Amara</span></button>
+              <button class="story"><span class="story-ring ring-blue"><b>TK</b></span><span>Tobi K.</span></button>
+              <button class="story"><span class="story-ring ring-orange"><b>ZE</b></span><span>ZeeCreates</span></button>
+              <button class="story"><span class="story-ring ring-pink"><b>NO</b></span><span>Nora</span></button>
+              <button class="story"><span class="story-ring ring-green"><b>JM</b></span><span>Jay Miles</span></button>
+              <button class="story"><span class="story-ring ring-cyan"><b>FI</b></span><span>FinTalk</span></button>
+            </div>
+          </section>
+
+          <div class="feed-layout">
+            <section class="feed-column">
+              <div class="feed-toolbar"><div class="feed-tabs"><button class="feed-tab active" data-feed="for-you">For you</button><button class="feed-tab" data-feed="following">Following</button><button class="feed-tab" data-feed="trending">Trending</button></div><button class="filter-btn" id="filterBtn">☷ <span>Filters</span></button></div>
+              <form class="composer" id="postForm">
+                <span class="avatar avatar-you">D</span>
+                <label class="composer-input"><input id="postInput" maxlength="500" placeholder="What’s on your mind, creator?" aria-label="Write a post"><span class="composer-hint">Share an idea, a win, a question...</span></label>
+                <div class="composer-bottom"><div class="composer-tools"><button type="button" class="tool-btn" data-compose="photo">▧ <span>Photo</span></button><button type="button" class="tool-btn" data-compose="video">▷ <span>Video</span></button><button type="button" class="tool-btn" data-compose="poll">▤ <span>Poll</span></button></div><button class="btn btn-primary btn-small" type="submit">Post <span>↗</span></button></div>
+              </form>
+              <div id="feedList" class="feed-list">
+                <article class="post-card">
+                  <div class="post-head"><span class="avatar avatar-amber">AM</span><div class="post-author"><strong>Amara Makes <span class="verified">✓</span></strong><small>@amaramakes · 18 min ago</small></div><button class="more-btn" aria-label="More options">•••</button></div>
+                  <p class="post-text">A reminder for the creators building quietly: your pace is still progress. Keep going. ✨ What are you working on this week?</p>
+                  <div class="post-art art-gradient-one"><div class="art-sticker">NOTE TO SELF · 01</div><div class="art-quote">Your next chapter<br><em>is allowed to look different.</em></div><div class="art-bottom">GROW AT YOUR OWN PACE <span>✦</span></div></div>
+                  <div class="post-stats"><span>♡ 248 reactions</span><span>32 replies · 14 shares</span></div><div class="post-actions"><button class="action-btn like-btn">♡ <span>Like</span></button><button class="action-btn comment-btn">◯ <span>Comment</span></button><button class="action-btn share-btn">↗ <span>Share</span></button><button class="action-btn save-btn">◇ <span>Save</span></button></div>
+                </article>
+                <article class="post-card">
+                  <div class="post-head"><span class="avatar avatar-blue">TK</span><div class="post-author"><strong>Tobi K. <span class="verified">✓</span></strong><small>@tobikreates · 1 hr ago</small></div><button class="more-btn" aria-label="More options">•••</button></div>
+                  <p class="post-text">Building something from your phone is not a small dream. Start with what you have, learn one thing every day, and let the work speak. 🚀</p>
+                  <div class="post-art art-gradient-two"><div class="art-quote">START SMALL.<br><em>Think beyond.</em></div><div class="art-tag">BUILD IN PUBLIC / DND</div></div>
+                  <div class="post-stats"><span>♡ 96 reactions</span><span>18 replies · 7 shares</span></div><div class="post-actions"><button class="action-btn like-btn">♡ <span>Like</span></button><button class="action-btn comment-btn">◯ <span>Comment</span></button><button class="action-btn share-btn">↗ <span>Share</span></button><button class="action-btn save-btn">◇ <span>Save</span></button></div>
+                </article>
+              </div>
+              <p class="demo-note"><span>✦</span> You’re viewing sample community content. Real accounts and shared posts need a backend.</p>
+            </section>
+
+            <aside class="right-column">
+              <section class="widget trend-widget"><div class="widget-heading"><h3>Happening now</h3><span class="live-mini">● LIVE</span></div><div class="trend-item"><div><small>CREATORS · TRENDING</small><strong>#MadeOnMyPhone</strong><span>2.4k conversations</span></div><span class="trend-arrow">↗</span></div><div class="trend-item"><div><small>COMMUNITY · POPULAR</small><strong>Build in Public</strong><span>1.8k conversations</span></div><span class="trend-arrow">↗</span></div><div class="trend-item"><div><small>VIDEO · RISING</small><strong>One-Minute Lessons</strong><span>960 conversations</span></div><span class="trend-arrow">↗</span></div><button class="text-btn full-btn" data-view="discover">Explore what's rising ↗</button></section>
+              <section class="widget people-widget"><div class="widget-heading"><h3>People to know</h3><button class="tiny-link" data-view="discover">See all</button></div><div class="person-row"><span class="avatar avatar-pink">ZE</span><div class="person-info"><strong>ZeeCreates <span class="verified">✓</span></strong><small>Design · Short videos</small></div><button class="follow-btn">Follow</button></div><div class="person-row"><span class="avatar avatar-green">JM</span><div class="person-info"><strong>Jay Miles</strong><small>Music · Community</small></div><button class="follow-btn">Follow</button></div><div class="person-row"><span class="avatar avatar-cyan">FI</span><div class="person-info"><strong>FinTalk</strong><small>Money basics · Learning</small></div><button class="follow-btn">Follow</button></div></section>
+              <section class="creator-banner"><span class="creator-spark">✦</span><p class="eyebrow">CREATOR CORNER</p><h3>Your creativity<br>deserves a home.</h3><p>Plan content, track your progress, and explore future creator tools.</p><button class="btn btn-primary btn-small" data-view="studio">Open studio ↗</button></section>
+              <footer class="footer-links"><span>About</span><span>Guidelines</span><span>Privacy</span><span>Help</span><small>© 2026 DND Social · Starter preview</small></footer>
+            </aside>
+          </div>
+        </div>
+
+        <div class="view" id="view-discover">
+          <div class="page-intro"><span class="eyebrow">FIND YOUR NEXT FAVORITE</span><h2>Explore beyond your feed.</h2><p>Discover creators, ideas, communities, and conversations worth your time.</p></div>
+          <div class="discover-grid"><article class="discover-tile tile-violet"><span>01 / CREATOR SPOTLIGHT</span><h3>Meet the people<br>making things happen.</h3><button class="btn btn-glass" data-view="home">Explore feed ↗</button></article><article class="discover-tile tile-blue"><span>02 / LEARN SOMETHING</span><h3>Small lessons.<br>Big perspective.</h3><button class="btn btn-glass" data-view="shorts">Watch shorts ↗</button></article><article class="discover-tile tile-orange"><span>03 / FIND YOUR CIRCLE</span><h3>Good ideas grow<br>together.</h3><button class="btn btn-glass" data-view="communities">Find communities ↗</button></article></div>
+          <div class="section-heading"><div><h3>Topics to explore</h3><p>Choose a lane—or create your own.</p></div></div><div class="topic-pills"><button># Creators</button><button># Tech & AI</button><button># Football</button><button># Music</button><button># Style</button><button># Business</button><button># Learning</button><button># Everyday life</button></div>
+          <div class="placeholder-panel"><div class="placeholder-icon">⌕</div><h3>Your discovery engine starts here</h3><p>Search and navigation work in this preview. Personalized recommendations, trending rankings, and creator discovery need real users and a backend.</p></div>
+        </div>
+
+        <div class="view" id="view-shorts">
+          <div class="page-intro"><span class="eyebrow">VERTICAL VIDEO · BUILT FOR MOBILE</span><h2>Short videos. Fresh perspectives.</h2><p>A dedicated home for quick stories, useful ideas, and creative moments.</p></div>
+          <div class="shorts-preview"><div class="shorts-screen"><div class="shorts-top"><span>◉ DND SHORTS</span><span>For you　 Following</span></div><div class="shorts-visual"><div class="shorts-play">▶</div><span class="shorts-sticker">YOUR NEXT IDEA<br><b>STARTS HERE.</b></span></div><div class="shorts-info"><b>@dndcreator</b><p>Make something that feels like you. ✦ #DNDShorts</p></div><div class="shorts-controls"><span>♡<small>Like</small></span><span>◯<small>Comment</small></span><span>↗<small>Share</small></span></div></div><div class="shorts-side"><span class="eyebrow">THE SHORTS EXPERIENCE</span><h3>Made for moments<br>that move you.</h3><p>This is a visual preview. Real video upload, playback, recommendations, creator rights, and moderation must be connected before launch.</p><button class="btn btn-primary" data-view="create">Plan your first post ↗</button></div></div>
+        </div>
+
+        <div class="view" id="view-communities">
+          <div class="page-intro"><span class="eyebrow">BETTER TOGETHER</span><h2>Find your people.</h2><p>Communities for shared interests, honest questions, and ideas in progress.</p></div>
+          <div class="community-grid"><article class="community-card"><div class="community-cover cover-purple">✦</div><span class="community-category">CREATORS</span><h3>Build in Public</h3><p>Share progress, learn openly, and support people building their next thing.</p><div class="community-meta"><span>◉ 1.8k members*</span><button class="join-btn">Join circle</button></div></article><article class="community-card"><div class="community-cover cover-blue">⌘</div><span class="community-category">TECH & AI</span><h3>Future Makers</h3><p>Talk tools, creative tech, and what you're learning along the way.</p><div class="community-meta"><span>◉ 960 members*</span><button class="join-btn">Join circle</button></div></article><article class="community-card"><div class="community-cover cover-orange">♫</div><span class="community-category">CULTURE</span><h3>Sound & Stories</h3><p>Music discoveries, creative expression, and the stories behind the sound.</p><div class="community-meta"><span>◉ 740 members*</span><button class="join-btn">Join circle</button></div></article></div>
+          <p class="demo-note">*Illustrative sample counts, not live memberships. Real community membership and moderation need a backend.</p>
+        </div>
+
+        <div class="view" id="view-messages">
+          <div class="page-intro"><span class="eyebrow">YOUR CONVERSATIONS</span><h2>Good things start with hello.</h2><p>A preview of the future DND inbox.</p></div>
+          <div class="placeholder-panel"><div class="placeholder-icon">✉</div><h3>Private messages aren't connected yet</h3><p>Secure messaging needs authenticated accounts, database policies, abuse reporting, and privacy controls. This preview does not send messages.</p></div>
+        </div>
+
+        <div class="view" id="view-live">
+          <div class="page-intro"><span class="eyebrow">LIVE · WHEN YOU'RE READY</span><h2>Bring your people into the moment.</h2><p>Host a conversation, share a skill, or bring your community together.</p></div>
+          <div class="live-feature"><div class="live-art"><div class="live-ring"></div><div class="live-screen-symbol">◉</div><span class="live-label">LIVE STUDIO PREVIEW</span></div><div class="live-copy"><span class="live-status">● FEATURE PLANNED</span><h3>Your stage.<br>Your community.</h3><p>Live streaming requires a streaming provider, secure stream keys, real-time chat, moderation tools, and bandwidth planning. This button does not start a real broadcast.</p><button class="btn btn-primary" id="liveNotify">Notify me when ready</button><small id="liveFeedback" class="feedback"></small></div></div>
+        </div>
+
+        <div class="view" id="view-market">
+          <div class="page-intro"><span class="eyebrow">THE DND MARKETPLACE</span><h2>Discover. Trade. Create value.</h2><p>A place for creators and communities to showcase goods and services.</p></div>
+          <div class="market-toolbar"><div class="topic-pills"><button class="active">All</button><button>Digital goods</button><button>Fashion</button><button>Services</button><button>Creator gear</button></div><button class="btn btn-primary btn-small" id="sellBtn">＋ List an item</button></div>
+          <div class="market-grid"><article class="product-card"><div class="product-art product-one"><span>CREATOR KIT</span><b>MAKE<br>MORE.</b></div><div class="product-info"><small>DIGITAL GOODS · SAMPLE</small><h3>Creator starter pack</h3><div class="product-bottom"><strong>₦4,500*</strong><button class="round-arrow" aria-label="View item">↗</button></div></div></article><article class="product-card"><div class="product-art product-two"><span>STUDIO GOODS</span><b>YOUR<br>BRAND.</b></div><div class="product-info"><small>DESIGN · SAMPLE</small><h3>Social media templates</h3><div class="product-bottom"><strong>₦2,000*</strong><button class="round-arrow" aria-label="View item">↗</button></div></div></article><article class="product-card"><div class="product-art product-three"><span>LEARN & GROW</span><b>LEVEL<br>UP.</b></div><div class="product-info"><small>EDUCATION · SAMPLE</small><h3>Content planning guide</h3><div class="product-bottom"><strong>₦3,000*</strong><button class="round-arrow" aria-label="View item">↗</button></div></div></article></div>
+          <p class="demo-note">*Sample prices only. No checkout, payment, inventory, delivery, or seller payouts are enabled in this starter.</p>
+        </div>
+
+        <div class="view" id="view-studio">
+          <div class="page-intro"><span class="eyebrow">CREATOR STUDIO</span><h2>Your creativity, with a plan.</h2><p>One home for your publishing workflow and future performance insights.</p></div>
+          <div class="studio-summary"><div class="metric-card"><span>POSTS IN THIS PREVIEW</span><strong id="metricPosts">2</strong><small>Local demo activity</small><i class="metric-symbol">▤</i></div><div class="metric-card"><span>LIKES YOU'VE GIVEN</span><strong id="metricLikes">0</strong><small>Stored in this browser</small><i class="metric-symbol">♡</i></div><div class="metric-card"><span>CREATOR EARNINGS</span><strong>—</strong><small>Not connected yet</small><i class="metric-symbol">₦</i></div></div>
+          <div class="studio-grid"><section class="widget"><div class="widget-heading"><h3>Creator checklist</h3><span class="status-chip">STARTER</span></div><label class="check-row"><input type="checkbox"> Complete your creator profile</label><label class="check-row"><input type="checkbox"> Publish your first original post</label><label class="check-row"><input type="checkbox"> Choose your content themes</label><label class="check-row"><input type="checkbox"> Review community guidelines</label></section><section class="widget"><div class="widget-heading"><h3>Growth dashboard</h3><span class="status-chip">PREVIEW</span></div><div class="chart-placeholder"><div class="chart-bars"><i style="height:25%"></i><i style="height:42%"></i><i style="height:34%"></i><i style="height:61%"></i><i style="height:49%"></i><i style="height:80%"></i><i style="height:67%"></i></div><div class="chart-labels"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div></div><p class="muted-small">Illustrative chart — not real analytics.</p></section></div>
+          <div class="notice-panel"><span>✦</span><div><strong>Monetization is a planned module, not active income.</strong><p>Before enabling creator payouts, DND needs eligibility rules, fraud prevention, tax/legal review, payment integrations, and transparent payout terms.</p></div></div>
+        </div>
+
+        <div class="view" id="view-create">
+          <div class="page-intro"><span class="eyebrow">MAKE SOMETHING YOURS</span><h2>Put your idea into the world.</h2><p>Start with a thought. Your next great post doesn't need to be perfect.</p></div>
+          <form class="create-form" id="createForm"><label for="createText">Your post</label><textarea id="createText" maxlength="500" placeholder="Share a thought, story, question, or idea..." required></textarea><div class="create-form-foot"><span id="charCount">0 / 500</span><span>✦ Be original. Be respectful.</span></div><div class="create-type"><button type="button" class="type-choice active" data-type="text">☰ Text post</button><button type="button" class="type-choice" data-type="photo">▧ Photo <small>planned</small></button><button type="button" class="type-choice" data-type="video">▷ Video <small>planned</small></button><button type="button" class="type-choice" data-type="poll">▤ Poll <small>planned</small></button></div><button class="btn btn-primary" type="submit">Publish preview post ↗</button><p class="muted-small">This publishes only to this browser's local preview. It will not appear to other people.</p></form>
+        </div>
+
+        <div class="view" id="view-settings">
+          <div class="page-intro"><span class="eyebrow">YOUR SPACE, YOUR CHOICES</span><h2>Settings & controls.</h2><p>Important controls for the future account experience.</p></div>
+          <div class="settings-list"><div><span class="settings-icon">♙</span><section><strong>Account & profile</strong><p>Sign-in, profile editing, and account recovery need authentication.</p></section><span class="planned-tag">PLANNED</span></div><div><span class="settings-icon">◈</span><section><strong>Privacy & safety</strong><p>Blocking, reporting, content controls, and data requests need secure backend support.</p></section><span class="planned-tag">PLANNED</span></div><div><span class="settings-icon">♧</span><section><strong>Notifications</strong><p>Real alerts require accounts and notification services.</p></section><span class="planned-tag">PLANNED</span></div><div><span class="settings-icon">☼</span><section><strong>Appearance</strong><p>Premium dark mode is enabled in this starter design.</p></section><span class="working-tag">ACTIVE</span></div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-view="home"><span>⌂</span><small>Home</small></button><button data-view="discover"><span>⌕</span><small>Discover</small></button><button class="mobile-create" data-view="create"><span>＋</span><small>Create</small></button><button data-view="shorts"><span>▷</span><small>Shorts</small></button><button data-view="studio"><span>▥</span><small>Studio</small></button></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
